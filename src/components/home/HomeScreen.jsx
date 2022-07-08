@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../home/HomeScreen.css";
 import loghome from "../../assets/images/logo-home/logo-home.png";
 import { useSelector } from "react-redux";
@@ -9,6 +9,7 @@ import CategoryFilter from "./CategoryFilter";
 
 const HomeScreen = () => {
 
+
  // en este useState guardo la info que viene del componente InputSeach.jsx
   const[searhProduct, setSearchProduct] = useState()
 
@@ -16,10 +17,6 @@ const HomeScreen = () => {
   const[searchProductFilter, setSearchProductFilter] = useState()
 
   const products = useSelector((state) => state.products);
-
-  const clickToggle = () => {
-
-  }
  
   useEffect(() => {
     if(searhProduct){
@@ -37,8 +34,7 @@ const HomeScreen = () => {
         <p>Bienvenido a Homies Shop</p>
       </section>
       <InputSearch setSearchProduct={setSearchProduct}/>
-      <button onClick={clickToggle} className="home__btn-filtro"><i className="fa-solid fa-filter"></i></button>
-      <CategoryFilter
+      <CategoryFilter 
       setSearchProductFilter={setSearchProductFilter}
       products={products}
       />

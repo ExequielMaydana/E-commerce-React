@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 
 const categories = ['Smartphones', 'Smart TV', 'Computers']
 
 const CategoryFilter = ({setSearchProductFilter, products}) => {
+
+
 
 
     const categoryFilter = categoryFilter => {
@@ -12,9 +14,10 @@ const CategoryFilter = ({setSearchProductFilter, products}) => {
 
 
   return (
-    <div>
+    <div className='container__category'>
         <h2>Category</h2>
-        <ul className='ulcategory'>
+        <button  className="home__btn-filtro"><i className="fa-solid fa-filter"></i></button>
+        <ul className='category__list'>
             {
                 categories.map(category => (
                     <li onClick={() => categoryFilter(category)} key={category}>{category}</li>

@@ -28,10 +28,12 @@ const CartScreen = () => {
 
   const cart = useSelector(state => state.cart)
 
+  console.log(cart);
+
   return (
-    <div className='container-cart'>
-        <button onClick={postPurchase}>confirm purchase</button>
-        <h2>My Cart</h2>
+    <div className='container__cart-btn'>
+      <div className='container__cart'>
+        <h2>Carrito de compras</h2>
         {
           cart?.map(productCart => (
             
@@ -40,9 +42,12 @@ const CartScreen = () => {
             productCart={productCart}
             />
             
-          
           ))
         }
+        </div>
+        <div className='cart__btn-purchase'>
+        <button onClick={postPurchase}>confirm purchase</button>
+        </div>
     </div>
   )
 }

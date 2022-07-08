@@ -37,14 +37,6 @@
     width: 70%;
 }
 
-.home__btn-filtro{
-    width: 30px;
-    aspect-ratio: 1;
-    border: none;
-    background: transparent;
-    font-size: 2rem;
-}
-
 /* input busqueda por name */
 .form__home{
     padding: 20px 0 0 0;
@@ -116,6 +108,24 @@
     background-color: #f7f7f7;
     color: #1A1A1A;
     transition: 0.3s;
+}
+
+/* filtrado por categoria */
+.home__btn-filtro{
+    width: 30px;
+    aspect-ratio: 1;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+}
+
+.category__list{
+
+}
+
+.open__category{
+    left: 0;
+    transition: 1s;
 }
 
 
