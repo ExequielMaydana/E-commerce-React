@@ -1,0 +1,141 @@
+.login{
+    width: 100%;
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.login__form{
+    position: relative;
+    width: 90%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background-color: #16141b;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgb(0,238,255);
+}
+
+.login__test{
+    color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.login__test li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.login__title{
+    color: #f7f7f7;
+}
+
+.login__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__item{
+    position: relative;
+    display: flex;
+    height: 2.5rem;
+    bottom: 15px;
+    top: 5px;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.login__label{
+    position: absolute;
+    top: 50%;
+    left: 0.65rem;
+    transform: translateY(-50%);
+    color: #888;
+    pad: 0.25rem 0.5rem;
+    pointer-events: none;
+    transition: transform 0.35s;
+}
+
+.login__input{
+    height: inherit;
+    width: 100%;
+    border: 2px solid #888;
+    border-radius: 0.5rem;
+    outline: none;
+    background: transparent;
+    color: #f7f7f7;
+    font-size: 1rem;
+    text-indent: 1rem;
+    transition: transform 0.35s;
+}
+
+.login__input:focus ~ .login__label {
+    background: #16141b;
+    color: rgb(0,238,255);
+    transform: translateY(-2.875rem);
+}
+
+.login__input:focus{border-color: rgb(0,238,255);}
+
+.login__form-error{
+    color: #f7f7f7;
+}
+
+.login__form-btn{
+    width: 50%;
+    padding: 5px;
+    background-color:  #d6dbdf ;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(0,238,255);
+    font-size: 1.1rem;
+    border: none;
+}
+
+.login__form-btn:hover{
+    background-color: rgb(0,238,255);
+    color: #16141b;
+    transition: 0.4s;
+}
+
+/* estilos del componente UserLogin */
+
+.user__loged-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+.user__loged{
+    width: 300px;
+    height: 300px;
+    background-color: #16141b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 255, 255);
+}
+
+.user__loged i {
+    font-size: 5rem;
+    color: #d6dbdf;
+}
+
+.user__loged h2 {
+    font-size: 2rem;
+    color: #d6dbdf;
+}

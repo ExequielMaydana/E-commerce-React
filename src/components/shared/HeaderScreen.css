@@ -1,0 +1,158 @@
+.header{
+    padding: var(--padding-mobile);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBEDEF;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+} 
+
+.header__img{
+    max-width: 100%;
+}
+
+.header__img img{
+    width: 50px;
+}
+
+/* .header__menuham{
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+} */
+
+/* menu-hamburguesa */
+.bars__menu {
+    width: 35px;
+    height: 35px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 0;
+}
+
+.bars__menu span {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    height: 2px;
+    background: #0E0E0E;
+    transition: transform 300ms;
+    transform-origin: 0px 100%;
+}
+
+.activeline1__bars-menu {
+    transform: rotate(45deg) translate(-1.2px, 1px);
+}
+
+.activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3__bars-menu {
+    transform: rotate(-45deg) translate(0.1px, 1px);
+}
+
+.navbar{
+    width: min(100%, 300px);
+    background-color: var(--primary-color);
+    height: 100vh;
+    padding-top: 100px;
+    position: fixed;
+    top: 103px;
+    width: 100%;
+    padding: 100px 0;
+    z-index: 1;
+
+    height: 100%;
+    /* este left es para que se oculte hacia la derecha hasta apretar el boton */
+    left: 100%;
+    transition: 1.5s;
+    background: #1A1A1A ;
+}
+ /* clase que activa el menu hamburguesa */
+.navbar__open {
+    left: 0;
+    transition: 1s;
+}
+
+.navbar__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar__links{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    color: #E5E7E9;
+    font-size: 1.1rem;
+    gap: 3px;
+}
+
+.navbar__link-active{
+    color: rgb(0, 255, 255);
+}
+
+.navbar__links:hover{
+    color: rgb(127, 255, 212);
+}
+
+
+@media screen and (min-width: 720px){
+
+    .header{
+        padding: 0 0 0 var(--padding-tablet);
+        height: 100px;
+    }
+    .header__menuham{
+        display: none;
+    }
+
+    .navbar__open{
+        transform: translateX(0);
+        transition-duration: 0ms;
+    }
+
+    .navbar{
+        transform: translateX(0);
+        transition-duration: 0ms;
+        position: static;
+        width: auto;
+        height: auto;
+        padding: initial;
+        width: 50%;
+        background-color: #EBEDEF;
+    }
+
+    .navbar__list{
+        flex-direction: initial;
+        justify-content: space-around;
+    }
+
+    .navbar__items{
+        padding: 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar__links{
+        /* padding: 0; */
+        color: #151414;
+    }
+
+    .navbar__links i{
+        color: #151414;
+    }
+}

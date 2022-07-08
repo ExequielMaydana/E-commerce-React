@@ -1,0 +1,95 @@
+.container__card-purchases{
+    padding: 200px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.purchases__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0 10px 0;
+}
+
+.purchases__header p {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.purchases__header p:hover{
+    color: rgb(220, 20, 60);
+}
+
+.purchases__header span {
+    width: 10px;
+    height: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(220, 20, 60);
+}
+
+.purchases__header h2 {
+    font-size: 1rem;
+}
+
+/* card purchase */
+.card__purchase{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    color: #EBEDEF ;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgb(0, 255,255);
+
+    gap: 10px;
+}
+
+/* contenedor de la fecha de la compra */
+.card__purchase-date{
+    font-size: 0.7rem;
+    border-bottom: 1px solid #EBEDEF;
+}
+
+/* contenedor data de la compra */
+.card__purchase-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+/* contenedor de la imagen, titulo del producto, cantidad y precio */
+.card__product-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* contenedor de la imagen y el titulo del producto comprado */
+.card__purchase-img-title{
+    display: flex;
+    font-size: 0.7rem;
+}
+
+/* contenedor de la cantidad y el precio del producto */
+.card__purchase-container-q-p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    gap: 10px;
+}
+
+/* cantidad */
+.card__purchase-quantity{
+    padding: 5px;
+    border: 1px solid #EBEDEF;
+}
