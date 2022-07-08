@@ -109,3 +109,118 @@
     color: #1E1E1E;
     border: 1px solid rgb(255, 0, 0);
 }
+
+@media (min-width: 720px){
+    .container__cart-btn{
+        padding: 150px 0 0 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .container__cart{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .container__cart h2 {
+        font-size: 1.2rem;
+        color: #1E1E1E;
+        margin-left: 10px;
+    }
+    
+    /* card de cada producto en el carrito */
+    
+    .product__cart{
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        border-top: 1px solid #1E1E1E;
+        border-bottom: 1px solid #1E1E1E;
+        background: #1E1E1E;
+    }
+    
+    .product__container-title-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .product__title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    
+    .product__title-brand{
+        color: #ffffffe0;
+        font-size: 0.8rem;
+    }
+    
+    .product__title-h3{
+        font-size: 1rem;
+        color: #ffffffe0;
+    }
+    
+    
+    .product__title-quantity{
+        border: 1px solid #ffffffe0;
+        width: 50px;
+        display: flex;
+        justify-content: center; 
+        color: #ffffffe0;
+    }
+    
+    .product__btn-delete{
+        font-size: 1rem;
+        color: #F51A08 ;
+        cursor: pointer;
+    }
+    
+    .product__btn-delete:hover{
+        color: #ffffffe0;
+    }
+    
+    .product__container-price{
+        display: flex;
+        justify-content: flex-end;
+        color: #ffffffe0;
+    }
+    
+    .product__container-price span {
+        color: #ffffffb4;
+        font-size: 0.9rem;
+    }
+    
+    .cart__btn-purchase{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0 ;
+        border-top: 1px solid #1E1E1E;
+    }
+    
+    .cart__btn-purchase button {
+        padding: 10px;
+        width: 40%;
+        background-color: #1E1E1E;
+        color: #ffffffb4;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    .cart__btn-purchase button:hover{
+        background-color: #ffffffb4;
+        color: #1E1E1E;
+        border: 1px solid rgb(255, 0, 0);
+    }
+}
