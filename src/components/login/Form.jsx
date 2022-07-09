@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import "../login/LoginScreen.css";
+import "../login/styles/loginScreen.css";
 
 const From = () => {
   const [isError, setIsError] = useState(false);

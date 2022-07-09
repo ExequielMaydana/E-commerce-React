@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import { Link, NavLink } from 'react-router-dom'
-import '../shared/HeaderScreen.css'
+import '../shared/styles/headerScreen.css'
 import image from '../../assets/images/logos/homies-shop-logo.png'
-// import image1 from '../../images/logos/Homies.png'
 
 const HeaderScreen = () => {
 

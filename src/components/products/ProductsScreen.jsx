@@ -1,9 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import '../products/StylesProducts.css'
 import ProductInfoId from './ProductInfoId'
 import SimilarProduct from './SimilarProduct'
+import '../products/styles/stylesProducts.css'
 
 const classImg = ['', 'second-img', 'third-img']
 const ProductsScreen = () => {

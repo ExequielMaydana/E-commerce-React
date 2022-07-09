@@ -2,8 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import getConfig from "../../utils/getConfig.js";
 import CardPurchases from "./CardPurchases.jsx";
-import '../purchases/StylesPurchases.css'
 import { useNavigate } from "react-router-dom";
+import '../purchases/styles/stylesPurchases.css'
 
 const PurchasesScreen = () => {
   /* guardamos la informacion del login en el localStorage y 

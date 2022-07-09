@@ -1,19 +1,22 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getAllProductsCart} from "../../store/slices/cart.slice";
 import getConfig from "../../utils/getConfig";
 
 const ProductCard = ({ product }) => {
-  // este navigate lo uso en el button "ver mas" para ir al shop
+
+  // este navigate lo uso en el button "ver mas" para ir al shop y ver la descripcion del producto y productos similares
   const navigate = useNavigate();
 
+  //utilizamos dispatch para llamar a la funcion creada en slices - cart.slice que es la funcion que hace el post!
   const dispatch = useDispatch()
 
-  // addProductCart agrega el producto al carrito
+  // addProductCart agrega el producto al carrito desde el boton que tiene cada card
   const addProductCart = () => {
     const URL = "https://ecommerce-api-react.herokuapp.com/api/v1/cart";
+
     const obj = {
       id: product.id,
       quantity: 1,

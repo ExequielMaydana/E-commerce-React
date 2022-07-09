@@ -26,6 +26,7 @@
     flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
+    font-size: 0.9rem;
 }
 
 .login__test li {
@@ -36,6 +37,7 @@
 
 .login__title{
     color: #f7f7f7;
+    font-size: 1rem;
 }
 
 .login__list{
@@ -118,8 +120,8 @@
     padding: 100px 0 0 0;
 }
 .user__loged{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: #16141b;
     display: flex;
     flex-direction: column;
@@ -131,11 +133,11 @@
 }
 
 .user__loged i {
-    font-size: 5rem;
+    font-size: 2rem;
     color: #d6dbdf;
 }
 
 .user__loged h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #d6dbdf;
 }

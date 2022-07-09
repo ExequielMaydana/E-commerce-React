@@ -19,10 +19,10 @@ function App() {
   //   const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/users'
   //   const user = {
       
-  //       firstName: "hernan",
-  //       lastName: "nashe",
-  //       email: "wep@gmail.com",
-  //       password: "holahola",
+  //       firstName: "Lucas",
+  //       lastName: "Godoy",
+  //       email: "exebiker@gmail.com",
+  //       password: "bikerr",
   //       phone: "1234567891",
   //       role: "admin"
     

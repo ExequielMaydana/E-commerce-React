@@ -111,21 +111,95 @@
 }
 
 /* filtrado por categoria */
+
+.container__category{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* button del filtro */
 .home__btn-filtro{
     width: 30px;
-    aspect-ratio: 1;
+    height: 30px;
+    cursor: pointer;
+    background: none;
     border: none;
-    background: transparent;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.category__menu{
+    width: min(100%, 300px);
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    padding: 100px 0;
+    z-index: 1;
+
+    height: 50%;
+    /* este left es para que se oculte hacia la derecha hasta apretar el boton */
+    left: 100%;
+    transition: 1.3s;
+    background: #1A1A1A ;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+/* este aparece despues de los 720px */
+.category__menu h2{ 
+    display: none;
 }
 
 .category__list{
-
+    color: #d6dbdf;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.3rem;
 }
 
-.open__category{
+.category__list-item{
+    cursor: pointer;
+}
+
+.category__list-item:hover {
+    color: #C90606;
+}
+
+.container__btn-text{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 10px 0 0 ;
+}
+
+/* esta clase abre el menu de categorias */
+.open-category{
     left: 0;
     transition: 1s;
+}
+
+/* button para cerrar el menu de categorias */
+.cerrar-menu-category{
+    left: 100%;
+    transition: 1s;
+}
+
+.menu__x{
+    position: absolute;
+    padding: 10px;
+    right: 10px;
+    bottom: 0px;
+    color: #d6dbdf;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.menu__x:hover{
+    color: #C90606 ;
 }
 
 
@@ -263,4 +337,64 @@
     background-color: #d6dbdf;
     color: #17202a;
     transition: 0.3s;
+}
+
+@media (min-width: 720px){
+
+    .form__home{
+        flex-direction: column;
+    }
+    
+    .form__home-item{
+        width: 50%;
+    }
+    
+    .form__home-btn{
+        width: 20%;
+    }
+
+    /* filtrado por categoria */
+    .container__category{
+        justify-content: flex-start;
+    }
+    
+    /* button del filtro */
+    .home__btn-filtro{
+     display: none;
+        
+    }
+    /* texto que esta al lado del button filtrar */
+    .category__filter-text{
+        display: none;
+    }
+
+    /* aca mostramos el filtro en desktop */
+    .category__menu{
+        position: static;
+        padding: initial;
+        background-color: #ffff;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .category__menu h2{ 
+        display: contents;
+    }
+    
+    .category__list{
+        display: flex;
+        padding: 20px 0;
+        color: #1A1A1A;
+    }
+
+    .category__list-item{
+        cursor: pointer;
+    }
+
+    .category__list-item:hover {
+        color: #C90606;
+    }
+    
 }

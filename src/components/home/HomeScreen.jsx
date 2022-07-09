@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
-import "../home/HomeScreen.css";
+import "../home/styles/homeScreen.css";
 import loghome from "../../assets/images/logo-home/logo-home.png";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import ProductCard from "./ProductCard";
 import InputSearch from "./InputSearch";
-import { setProductsGlobal } from "../../store/slices/products.slice";
 import CategoryFilter from "./CategoryFilter";
+
 
 const HomeScreen = () => {
 
