@@ -10,6 +10,7 @@ import { useDispatch} from "react-redux";
 import ProductsScreen from "./components/products/ProductsScreen"
 import { getAllProducts } from "./store/slices/products.slice"
 import { useEffect } from "react"
+import FooterScreen from './components/shared/FooterScreen'
 import axios from "axios"
 
 function App() {
@@ -51,6 +52,7 @@ const dispatch = useDispatch();
       </Route>
       <Route path='/shop/:id' element={<ProductsScreen/>}/>
      </Routes>
+     <FooterScreen />
     </div>
   )
 }

@@ -15,7 +15,7 @@
 }
 
 .home__img img {
-    width: 70%;
+    width: 100%;
 }
 
 .home__img span {
@@ -38,7 +38,7 @@
 }
 
 /* input busqueda por name */
-.form__home{
+.form__home {
     padding: 20px 0 0 0;
     width: 100%;
     display: flex;
@@ -50,7 +50,7 @@
 
 }
 
-.form__home-item{
+.form__home-item {
     position: relative;
     display: flex;
     height: 2.5rem;
@@ -60,7 +60,7 @@
     margin: 10px 0;
 }
 
-.form__home-label{
+.form__home-label {
     position: absolute;
     top: 50%;
     left: 0.65rem;
@@ -72,7 +72,7 @@
     font-size: 0.8rem;
 }
 
-.form__home-input{
+.form__home-input {
     height: inherit;
     width: 100%;
     border: 2px solid #888;
@@ -85,14 +85,14 @@
     transition: transform 0.35s;
 }
 
-.form__home-input:focus ~ .form__home-label {
+.form__home-input:focus~.form__home-label {
     border-radius: 5px;
     background: #16141b;
-    color: rgb(0,238,255);
+    color: rgb(0, 238, 255);
     transform: translateY(-2.875rem);
 }
 
-.form__home-btn{
+.form__home-btn {
     padding: 10px;
     width: 40%;
     background-color: #16141b;
@@ -100,11 +100,11 @@
     border-radius: 5px;
     border: none;
     font-size: 1rem;
-    box-shadow: 0 0 3px rgb(0,238,255);
+    box-shadow: 0 0 3px rgb(0, 238, 255);
     cursor: pointer;
 }
 
-.form__home-btn:hover{
+.form__home-btn:hover {
     background-color: #f7f7f7;
     color: #1A1A1A;
     transition: 0.3s;
@@ -112,14 +112,18 @@
 
 /* filtrado por categoria */
 
-.container__category{
+.container-filter-desktop{
+    width: 100%;
+}
+
+.container__category {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
 /* button del filtro */
-.home__btn-filtro{
+.home__btn-filtro {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -128,7 +132,7 @@
     font-size: 1.5rem;
 }
 
-.category__menu{
+.category__menu {
     width: min(100%, 300px);
     position: fixed;
     top: 100px;
@@ -140,7 +144,7 @@
     /* este left es para que se oculte hacia la derecha hasta apretar el boton */
     left: 100%;
     transition: 1.3s;
-    background: #1A1A1A ;
+    background: #1A1A1A;
 
     display: flex;
     justify-content: space-between;
@@ -149,11 +153,11 @@
 }
 
 /* este aparece despues de los 720px */
-.category__menu h2{ 
+.category__menu h2 {
     display: none;
 }
 
-.category__list{
+.category__list {
     color: #d6dbdf;
     display: flex;
     flex-direction: column;
@@ -161,7 +165,7 @@
     font-size: 1.3rem;
 }
 
-.category__list-item{
+.category__list-item {
     cursor: pointer;
 }
 
@@ -169,26 +173,26 @@
     color: #C90606;
 }
 
-.container__btn-text{
+.container__btn-text {
     display: flex;
     align-items: center;
     gap: 5px;
-    padding: 10px 10px 0 0 ;
+    padding: 10px 10px 0 0;
 }
 
 /* esta clase abre el menu de categorias */
-.open-category{
+.open-category {
     left: 0;
     transition: 1s;
 }
 
 /* button para cerrar el menu de categorias */
-.cerrar-menu-category{
+.cerrar-menu-category {
     left: 100%;
     transition: 1s;
 }
 
-.menu__x{
+.menu__x {
     position: absolute;
     padding: 10px;
     right: 10px;
@@ -198,8 +202,8 @@
     cursor: pointer;
 }
 
-.menu__x:hover{
-    color: #C90606 ;
+.menu__x:hover {
+    color: #C90606;
 }
 
 
@@ -212,7 +216,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .card__product {
@@ -220,6 +224,11 @@
     height: 400px;
     border-radius: 10px;
     border: 1px solid #808b96;
+}
+
+.card__product:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 4px #1A1A1A;
 }
 
 .card__product-header {
@@ -297,7 +306,7 @@
     color: #1A1A1A;
 }
 
-.card__product-btn-ver{
+.card__product-btn-ver {
     width: 80px;
     height: 30px;
     aspect-ratio: 1;
@@ -310,7 +319,7 @@
     cursor: pointer;
 }
 
-.card__product-btn-ver:hover{
+.card__product-btn-ver:hover {
     background-color: #d6dbdf;
     color: #17202a;
     transition: 0.3s;
@@ -339,62 +348,64 @@
     transition: 0.3s;
 }
 
-@media (min-width: 720px){
-
-    .form__home{
+@media (min-width: 720px) {
+   
+    .form__home {
         flex-direction: column;
     }
-    
-    .form__home-item{
+
+    .form__home-item {
         width: 50%;
     }
-    
-    .form__home-btn{
+
+    .form__home-btn {
         width: 20%;
     }
 
-    /* filtrado por categoria */
-    .container__category{
-        justify-content: flex-start;
-    }
-    
     /* button del filtro */
-    .home__btn-filtro{
-     display: none;
-        
+    .home__btn-filtro {
+        display: none;
     }
+
     /* texto que esta al lado del button filtrar */
-    .category__filter-text{
+    .category__filter-text {
         display: none;
     }
 
     /* aca mostramos el filtro en desktop */
-    .category__menu{
+    .category__menu {
         position: static;
         padding: initial;
-        background-color: #ffff;
+        background: transparent;
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
         flex-direction: column;
+        margin-top: 20px;
     }
 
-    .category__menu h2{ 
+    .category__menu h2 {
         display: contents;
-    }
-    
-    .category__list{
-        display: flex;
-        padding: 20px 0;
-        color: #1A1A1A;
+        font-size: 1.3rem;
     }
 
-    .category__list-item{
+    .category__list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        color: #1A1A1A;
+        text-shadow: 0 0 3px #757474;
+    }
+
+    .category__list-item {
         cursor: pointer;
     }
 
     .category__list-item:hover {
         color: #C90606;
+        transform: scale(1.1);
     }
-    
+
 }

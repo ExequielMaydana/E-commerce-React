@@ -34,10 +34,12 @@ const HomeScreen = () => {
         <p>Bienvenido a Homies Shop</p>
       </section>
       <InputSearch setSearchProduct={setSearchProduct}/>
+
       <CategoryFilter 
       setSearchProductFilter={setSearchProductFilter}
       products={products}
       />
+
       <section className="home__container-cards">
         { searchProductFilter ?
           searchProductFilter.map(product => (

@@ -29,7 +29,7 @@ const CategoryFilter = ({setSearchProductFilter, products}) => {
         <p className='category__filter-text'>filtrar</p>
         </div>
         <div ref={categoryMenu} className='category__menu'>
-        <h2>Categorias</h2>
+        <h2>Filtrar productos por categoria</h2>
         <ul className='category__list'>
             {
                 categories.map(category => (
